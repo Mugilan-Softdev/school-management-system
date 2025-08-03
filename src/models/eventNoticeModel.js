@@ -13,6 +13,6 @@ const eventSchema = new mongoose.Schema({
     enum: ["all", "teachers", "students", "parents"], 
     default: "all" 
   },
-  grades: [{ type: String }], // If targeted
+  grades: [{ type: String }],
   notificationSent: { type: Boolean, default: false }
 }, { timestamps: true });
